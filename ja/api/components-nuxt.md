@@ -7,6 +7,11 @@ description: レイアウト内でページコンポーネントを表示しま�
 
 > このコンポーネントは [レイアウト](/guide/views#レイアウト) 内でのみ、ページコンポーネントを表示するために使われます。
 
+**Props**:
+- nuxtChildKey: `string`
+  - このpropsは`<router-view/>`に設定され、動的なページと別のルートの内部でトランジションを行うのに便利です。
+  - Default: `$route.fullPath`
+  
 例（`layouts/default.vue`）:
 
 ```html
